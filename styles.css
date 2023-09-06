@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#left {
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+#left > div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white
+}
+
+h3 {
+    font-size: 40px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 16px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover .fa {
+    color: rgb(58, 58, 58);
+}
+
+#down-arrow {
+    position: fixed;
+    right: 65%;
+    top: 50%;
+    border-radius: 5px 0 0 5px;
+}
+
+.fa {
+    color: rgb(138, 138, 138);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#up-arrow {
+    position: fixed;
+    top: 50%;
+    left: 35%;
+    transform: translate(0, -100%);
+    border-radius: 0 5px 5px 0;;
+}
+
+#right {
+    width: 65%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+#right > div {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
